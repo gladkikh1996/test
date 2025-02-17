@@ -39,7 +39,7 @@ jobs:
 
   deploy_on_prod:
     runs-on: ubuntu-latest
-    build: autotest
+    needs: autotest
     steps:
       - uses: actions/checkout@v4
 
